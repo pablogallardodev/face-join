@@ -1,0 +1,26 @@
+.nav-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container h1 {
+    margin: .5rem 0;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+.switch-container .switch {
+    margin: 0 5px;
+    width: 60px;
+    height: 20px;
+    background-color: #bbb;
+}
