@@ -16,12 +16,17 @@
     </div>
   </div>
   
-  <form class="form-container">
-    <p class='title'>Bienvenido!!!</p>
-    <p>Ingresa un nombre: <input type="text"/></p>
-    <button>Comenzar</button>
-    <a href="./loby.html">ir</a>
-  </form>
+  <div class='loby-container'>
+    <div class="participant" id="local-video"></div>
+    <div>
+      <h1>Hola {username}!! 👋</h1>
+      <h2>Que deseas hacer?</h2>
+      <div class='btn-container'>
+        <button onClick={handleCreateRoom} >Crear una sala</button>
+        <button>Unirse a una sala</button>
+      </div>
+    </div>
+  </div>
 
   <script defer src="https://sdk.twilio.com/js/video/releases/2.21.0/twilio-video.min.js"></script>
   <script defer src="./app.js"></script>
