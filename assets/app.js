@@ -67,7 +67,6 @@ async function connect ({username}) {
 }
 
 function disconnect () {
-  console.log(room)
   room.disconnect()
   // quitar la cámara de los divs
   connected = false
