@@ -1,22 +1,42 @@
-# Twilio Hackathon. Participate!
+# Twilio Video chat with React Hooks
 
-🏆 PREMIO: TECLADO KEYCHRON K3 ULTRA-SLIM RGB (https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard?variant=32220198633561)
+This is an example video chat application built with [Twilio Video](https://www.twilio.com/docs/video) and React, using Hooks.
 
-¿CÓMO PARTICIPAR?
-Itera o mejora el proyecto de Google Meet Clone (https://github.com/midudev/google-meet-clone) tanto COMO QUIERAS.
-Usa nuevos frameworks, dependencias, mejora el código, arregla bugs, dale diseño, nuevas funcionalidades. LO QUE QUIERAS.
+Learn how to build this entire application in the blog post [Build a Twilio Video Chat with React Hooks](https://www.twilio.com/blog/video-chat-react-hooks).
 
-Tienes que dejar tu repositorio en ESTE CANAL.
+## Preparing the application
 
-¿QUIÉN GANA?
-midu seleccionará 3 proyectos y el ganador será decidido por votación POPULAR.
+To run the application you will need a [Twilio account](https://www.twilio.com/try-twilio) and Node.js and npm installed. Start by cloning or downloading the repo to your machine.
 
-¿HASTA CUANDO TENGO TIEMPO?
-Tienes tiempo hasta el directo de TWITCH del día 6 de MAYO donde se decidirán los ganadores.
+```bash
+git clone https://github.com/philnash/twilio-video-react-hooks.git
+cd twilio-video-react-hooks
+```
 
-REGLAS
-1. Tiene que tener un repositorio de código abierto.
-2. El proyecto debe estar desplegado (si no quieres hacer pública la URL, pásamela por privado)
-3. En el README tiene que poner un enlace al TWITCH de midudev (https://twitch.tv/midudev)
+Install the dependencies:
 
-Regístrate en Twilio con este enlace: https://www.twilio.com/referral/xdppiQ 
+```bash
+npm install
+```
+
+Create a `.env` file by copying the `.env.example`.
+
+```bash
+cp .env.example .env
+```
+
+### Credentials
+
+You will need your Twilio Account SID, available in your [Twilio console](https://www.twilio.com/console). Add it to the `.env` file.
+
+You will also need an API key and secret, you can create these under the [Programmable Video Tools in your console](https://www.twilio.com/console/video/project/api-keys). Create a key pair and add them to the `.env` file too.
+
+## Running the application
+
+Once you have completed the above you can run the application with:
+
+```bash
+npm run dev
+```
+
+This will open in your browser at [localhost:3000](http://localhost:3000).

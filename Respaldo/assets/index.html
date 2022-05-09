@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Meet Clone</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>Face Join</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -16,19 +16,14 @@
     </div>
   </div>
   
-  <div class='loby-container'>
-    <div class="participant" id="local-video"></div>
-    <div>
-      <h1>Hola {username}!! 👋</h1>
-      <h2>Que deseas hacer?</h2>
-      <div class='btn-container'>
-        <button onClick={handleCreateRoom} >Crear una sala</button>
-        <button>Unirse a una sala</button>
-      </div>
-    </div>
-  </div>
+  <form class="form-container">
+    <p class='title'>Bienvenido!!!</p>
+    <p>Ingresa un nombre: <input type="text"/></p>
+    <button>Comenzar</button>
+    <a href="./loby.html">ir</a>
+  </form>
 
   <script defer src="https://sdk.twilio.com/js/video/releases/2.21.0/twilio-video.min.js"></script>
-  <script defer src="./app.js"></script>
+  <script defer src="./js/app.js"></script>
 </body>
 </html>
