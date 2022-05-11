@@ -1,0 +1,54 @@
+.modal-container {    
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.modal-body {
+    background-color: white;
+    border-radius: 10px;
+    padding: .2rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: view .6s;
+}
+
+.modal-body label {
+    width: 100%;
+    text-align: right;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.modal-body p{
+    font-size: 1.2rem;
+}
+
+.modal-body button {
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    margin: 10px;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px 2px 1px;
+    transition: all ease-in .2s;
+}
+
+@keyframes view {
+    0% { opacity: 0; transform: translateY(-80px);}
+    100% { opacity: 1; transform: translateY(0);}
+}

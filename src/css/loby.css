@@ -1,0 +1,77 @@
+.loby-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.participant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.participant > .cancel-icon {
+    position: absolute;
+    font-size: 9rem;
+}
+
+.participant > .local-video {
+    text-align: center;
+}
+
+.participant> .local-video > video {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.participant > .video-actions {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: -50px;
+    padding: 5px 0;
+}
+
+.video-actions > label, .video-actions > button {
+    background-color: #2d6cdf;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.video-actions > button {
+    background-color: #303a52;
+    font-size: 1rem;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-container button {
+    margin-right: 5px;
+    font-size: large;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+
+.btn-container button:hover {
+    transform: translateY(-3px);
+}
