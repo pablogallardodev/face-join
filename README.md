@@ -40,3 +40,7 @@ npm run dev
 ```
 
 Esto se abrirá en su navegador en [localhost:3000](http://localhost:3000).
+
+## Menciones
+
+Este proyecto es realizado en base a un Hackathon, el cuál, ha sido lanzado por Miguel Ángel Durán (midudev), a quíen puedes encontrar en directos en [Twich](https://twitch.tv/midudev)
