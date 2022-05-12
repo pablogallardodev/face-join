@@ -41,6 +41,12 @@ npm run dev
 
 Esto se abrirá en su navegador en [localhost:3000](http://localhost:3000).
 
+## Desplegar app (opcional)
+
+Si deseas desplegar el app en un servidor de Twilio, primero debes instalar twilio-cli, para esto sigue estos pasos [Install twilio-cli](https://www.twilio.com/docs/twilio-cli/quickstart)
+
+Posteriormente deberas seguir estos pasos para desplegar la app [Deploy app](https://www.twilio.com/docs/labs/serverless-toolkit/guides/continous-deployment)
+
 ## Menciones
 
 Este proyecto es realizado en base a un Hackathon, el cuál, ha sido lanzado por Miguel Ángel Durán (midudev), a quíen puedes encontrar en directos en [Twich](https://twitch.tv/midudev)
