@@ -9,6 +9,7 @@ const Modal = ({ showModal, setShowModal, roomName, setRoomName, connecting, han
             <form className="modal-body" onSubmit={handleClick}>
                 <label onClick={() => setShowModal(false)}>❌</label>
                 <p>Ingresa un nombre de sala: </p>
+                <span>Si existe la sala te uniremos a ella, en caso contrario se creara una nueva.</span>
                 <input type="text" value={roomName} readOnly={connecting} onChange={(e) => setRoomName(e.target.value)} />
                 {errorName && <p style={{ color: 'red', fontSize: '1rem' }}>Ingresa un nombre de sala</p>}
                 <button disabled={connecting}>{connecting ? 'Conectando...' : 'Conectar'}</button>

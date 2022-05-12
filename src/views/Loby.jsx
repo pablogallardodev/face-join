@@ -24,6 +24,7 @@ const Loby = ({ username }) => {
       Video.createLocalVideoTrack().then( track => {
         localVideoRef.current.appendChild(track.attach())
         setTrack(track)
+        setPreview(true)
       })
     }
   },[room])
@@ -56,6 +57,7 @@ const Loby = ({ username }) => {
         setConnecting(false)
         setShowModal(false)
         setRoom(room)
+        
       }).catch((error) => {
         console.error(error)
         setConnecting(false)
@@ -95,10 +97,7 @@ const Loby = ({ username }) => {
       <div>
         <h1>Hola {username}!! 👋</h1>
         <h2>Que deseas hacer?</h2>
-        <div className='btn-container'>
-            <button onClick={() => setShowModal(true) }>Crear una sala</button>
-            <button onClick={() => setShowModal(true) }>Unirse a una sala</button>
-        </div>
+        <button onClick={() => setShowModal(true) }>Crear/unirse a una sala</button>
       </div>
       <Modal
         showModal={showModal}

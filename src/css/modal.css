@@ -11,6 +11,8 @@
 }
 
 .modal-body {
+    width: min-content;
+    min-width: 400px;
     background-color: white;
     border-radius: 10px;
     padding: .2rem .5rem;
@@ -29,6 +31,14 @@
 
 .modal-body p{
     font-size: 1.2rem;
+    margin: 5px;
+}
+
+.modal-body span {
+    text-align: center;
+    font-size: .9rem;
+    width: 70%;
+    margin: 10px;
 }
 
 .modal-body button {

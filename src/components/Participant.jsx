@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { BsCameraVideoFill, BsCameraVideoOffFill, BsMicFill, BsMicMuteFill } from 'react-icons/bs'
+import { BsCameraVideoOffFill, BsMicMuteFill } from 'react-icons/bs'
 
 import '../css/participant.css'
 

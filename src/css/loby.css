@@ -58,14 +58,7 @@
     cursor: pointer;
 }
 
-.btn-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.btn-container button, .room-data > button {
+.loby-container > div > button, .room-data > button {
     margin-right: 5px;
     font-size: large;
     padding: 3px 6px;
@@ -74,6 +67,6 @@
     transition: all ease-in .2s;
 }
 
-.btn-container button:hover {
+.loby-container > div > button:hover {
     transform: translateY(-3px);
 }
