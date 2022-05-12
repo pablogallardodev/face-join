@@ -43,9 +43,7 @@ Esto se abrirá en su navegador en [localhost:3000](http://localhost:3000).
 
 ## Desplegar app (opcional)
 
-Si deseas desplegar el app en un servidor de Twilio, primero debes instalar twilio-cli, para esto sigue estos pasos [Install twilio-cli](https://www.twilio.com/docs/twilio-cli/quickstart)
-
-Posteriormente deberas seguir estos pasos para desplegar la app [Deploy app](https://www.twilio.com/docs/labs/serverless-toolkit/guides/continous-deployment)
+Si deseas desplegar el app en un servidor de Twilio, puedes seguir el siguiente [manual](https://www.twilio.com/docs/labs/serverless-toolkit/guides/continous-deployment), con el cuál podras realizar un despliegue con facilidad.
 
 ## Menciones
 
