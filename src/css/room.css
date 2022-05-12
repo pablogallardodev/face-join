@@ -1,0 +1,74 @@
+.room {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.room > .room-data {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.room-data * {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.room-data > button {
+    background-color: red;
+    border: 1px solid #444;
+    color: white;
+}
+
+.room > .out-participant {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 7%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all ease-in .2s;
+    border-left: 2px solid green;
+}
+
+.out-participant > label {
+    font-size: 1.3rem;
+}
+
+.room > .participants {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.room > .actions {
+    background-color: white;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.room > .actions > label {
+    margin: 5px 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+
+.room > .actions > label:hover {
+    transform: scale(1.05);
+}

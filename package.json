@@ -8,6 +8,7 @@
     "express-pino-logger": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "^4.0.3",
     "twilio": "^3.69.0",
     "twilio-video": "^2.17.1"

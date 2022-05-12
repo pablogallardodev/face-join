@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs'
 
 import '../css/nav.css'
 
@@ -7,7 +8,9 @@ const Navbar = () => {
     <div className='nav-container'>
         <h1>Face Join</h1>
         <div className='switch-container'>
-            🌙 <div className='switch'></div> 🌞
+            <BsFillMoonFill/>
+            <div className='switch'></div>
+            <BsFillSunFill/>
         </div>
     </div>
   )

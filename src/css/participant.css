@@ -1,0 +1,45 @@
+.participants > .participant {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    min-width: 300px;
+    max-width: 400px;
+    width: auto;
+}
+
+.participant > h3 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: min-content;
+    background-color: #17b978;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.participant > video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.participant > .actions {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    color: #fff;
+}
+
+.participant > .actions > svg {
+    font-size: 1.2rem;
+    margin: 0 5px;
+}

@@ -6,23 +6,24 @@
     align-items: center;
 }
 
-.participant {
+.local-participant {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.participant > .cancel-icon {
+.local-participant > .cancel-icon, .participant > .cancel-icon {
     position: absolute;
-    font-size: 9rem;
+    font-size: 15rem;
+    color:white;
 }
 
-.participant > .local-video {
+.local-participant > .local-video {
     text-align: center;
 }
 
-.participant> .local-video > video {
+.local-participant > .local-video > video {
     width: 90%;
     height: auto;
     border-radius: 5px;
@@ -30,7 +31,7 @@
     box-shadow: 0 0 10px #bbb;
 }
 
-.participant > .video-actions {
+.local-participant > .video-actions {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -49,8 +50,9 @@
 }
 
 .video-actions > button {
+    display: flex;
+    align-items: center;
     background-color: #303a52;
-    font-size: 1rem;
     font-weight: normal;
     border: none;
     cursor: pointer;
@@ -63,7 +65,7 @@
     justify-content: space-between;
 }
 
-.btn-container button {
+.btn-container button, .room-data > button {
     margin-right: 5px;
     font-size: large;
     padding: 3px 6px;

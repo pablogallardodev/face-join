@@ -28,3 +28,18 @@ width: 100%;
 margin: 0 auto;
 font-size: 1.2rem;
 }
+
+.form-container > .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.social > * {
+    font-size: 2rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
