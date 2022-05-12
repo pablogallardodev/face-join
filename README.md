@@ -9,7 +9,7 @@ Para ejecutar la aplicacion debes contar con una [cuenta de Twilio](https://www.
 Descarga el repositorio:
 
 ```bash
-git clone https://github.com/pablogallardodev/face-join.gittwilio-video-react-hooks.git
+git clone https://github.com/pablogallardodev/face-join.git
 cd face-join
 ```
 
@@ -29,9 +29,9 @@ cp .env.example .env
 
 Necesitará el SID de su cuenta de Twilio, el cuál puede encontrar en su [consola de Twilio](https://www.twilio.com/console). Agréguelo al archivo `.env` (TWILIO_ACCOUNT_SID).
 
-También es necesario crear una `API key` y un `secret`, los cuales puede generar en la [Programmable Video Tools in your console](https://www.twilio.com/console/video/project/api-keys). Cree una clave y también añadalas al archivo `.env` (TWILIO_API_KEY, TWILIO_API_SECRET).
+También es necesario crear una `API key` y un `secret`, los cuales puede generar en la [consola de Video Twilio](https://www.twilio.com/console/video/project/api-keys). Cree una clave y también añadalas al archivo `.env` (TWILIO_API_KEY, TWILIO_API_SECRET).
 
-## Ejecutando la aplicaciónRunning the application
+## Ejecutando la aplicación
 
 Una vez completado lo mencionado anteriormente, puede ejecutar la aplicación con:
 
