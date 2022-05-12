@@ -1,42 +1,42 @@
-# Twilio Video chat with React Hooks
+# Face join - Clon de Google Meet
 
-This is an example video chat application built with [Twilio Video](https://www.twilio.com/docs/video) and React, using Hooks.
+Este es un ejemplo de una aplicacion web para videollamadas en donde puedes crear o conectarte a una sala de manera facíl, esta hecha con [Twilio Video](https://www.twilio.com/docs/video) y [React js](https://reactjs.org/)
 
-Learn how to build this entire application in the blog post [Build a Twilio Video Chat with React Hooks](https://www.twilio.com/blog/video-chat-react-hooks).
+## Preparando la aplicación
 
-## Preparing the application
+Para ejecutar la aplicacion debes contar con una [cuenta de Twilio](https://www.twilio.com/try-twilio), tener instalado en tu equipo Node.js (Preferentemente versión 14) y NPM.
 
-To run the application you will need a [Twilio account](https://www.twilio.com/try-twilio) and Node.js and npm installed. Start by cloning or downloading the repo to your machine.
+Descarga el repositorio:
 
 ```bash
-git clone https://github.com/philnash/twilio-video-react-hooks.git
-cd twilio-video-react-hooks
+git clone https://github.com/pablogallardodev/face-join.gittwilio-video-react-hooks.git
+cd face-join
 ```
 
-Install the dependencies:
+Instala las dependencias:
 
 ```bash
 npm install
 ```
 
-Create a `.env` file by copying the `.env.example`.
+Crea un archivo `.env` a partir del archivo `.env.example`.
 
 ```bash
 cp .env.example .env
 ```
 
-### Credentials
+### Variables .env
 
-You will need your Twilio Account SID, available in your [Twilio console](https://www.twilio.com/console). Add it to the `.env` file.
+Necesitará el SID de su cuenta de Twilio, el cuál puede encontrar en su [consola de Twilio](https://www.twilio.com/console). Agréguelo al archivo `.env` (TWILIO_ACCOUNT_SID).
 
-You will also need an API key and secret, you can create these under the [Programmable Video Tools in your console](https://www.twilio.com/console/video/project/api-keys). Create a key pair and add them to the `.env` file too.
+También es necesario crear una `API key` y un `secret`, los cuales puede generar en la [Programmable Video Tools in your console](https://www.twilio.com/console/video/project/api-keys). Cree una clave y también añadalas al archivo `.env` (TWILIO_API_KEY, TWILIO_API_SECRET).
 
-## Running the application
+## Ejecutando la aplicaciónRunning the application
 
-Once you have completed the above you can run the application with:
+Una vez completado lo mencionado anteriormente, puede ejecutar la aplicación con:
 
 ```bash
 npm run dev
 ```
 
-This will open in your browser at [localhost:3000](http://localhost:3000).
+Esto se abrirá en su navegador en [localhost:3000](http://localhost:3000).
