@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Video from 'twilio-video'
 import { BsCameraVideoFill, BsCameraVideoOffFill, BsFillPersonFill } from 'react-icons/bs'
+import { getToken } from '../api/get-token.js'
 import Modal from '../components/Modal'
 import Navbar from '../components/Navbar'
 import Room from './Room'
@@ -39,30 +40,26 @@ const Loby = ({ username }) => {
     if (roomName) {
       setConnecting(true);
       // Obtenemos un token
-      const data = await fetch("/video/token", {
-        method: "POST",
-        body: JSON.stringify({
-          identity: username,
-          room: roomName,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }).then((res) => res.json());
+      const token = await getToken({ identity: username, room: roomName });
       
-      // Creamos la sala y nos conectamos
-      Video.connect(data.token, {
-        name: roomName
-      }).then((room) => {
-        setConnecting(false)
-        setShowModal(false)
-        setRoom(room)
-        
-      }).catch((error) => {
-        console.error(error)
-        setConnecting(false)
-        setShowModal(false)
-      })
+      if (token) {
+        // Creamos la sala y nos conectamos
+        Video.connect(token, {
+          name: roomName
+        }).then((room) => {
+          setConnecting(false)
+          setShowModal(false)
+          setRoom(room)
+          
+        }).catch((error) => {
+          console.error(error)
+          setConnecting(false)
+          setShowModal(false)
+        })
+      } else {
+        setConnecting(false);
+      }
+
     } else {
       setErrorName(true);
       setInterval(() => {
