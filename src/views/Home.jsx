@@ -7,7 +7,7 @@ import '../css/home.css'
 
 const Home = () => {
 
-  const [username, setUsername] = useState('Pablo')
+  const [username, setUsername] = useState('')
   const [login, setlogin] = useState(false)
 
   return (
